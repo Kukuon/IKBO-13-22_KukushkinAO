@@ -1,0 +1,331 @@
+<!DOCTYPE html> <!-- Опредение типа документа для браузера-->
+<html lang="ru"> <!-- Главныфй тег с атрибутом языка страницы-->
+
+
+<head> <!-- Главная часть страницы -->
+    <title>Автосалон Honda</title> <!-- Заголовок страницы на вкадке -->
+    <meta charset="utf-8"> <!-- Кодировка старницы -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Для совместимости с IE-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Для правильного отображения на мобильных устройствах-->
+    <link rel="icon" href="https://www.svgrepo.com/show/446876/honda.svg" type="image/svg">
+    <!-- set favicon of web page -->
+    <link rel="stylesheet" href="../css/main.css"> <!--подключение css файла для стилизации страницы-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@700&display=swap" rel="stylesheet">
+</head>
+
+
+<body> <!-- Тело страницы -->
+    <header>
+        <div class="head-logo">
+            <a href="main.html"> <!--изображение логотипа-->
+                <svg width="200" viewBox="0 0 192.756 192.756" xmlns="http://www.w3.org/2000/svg">
+                    <g fill-rule="evenodd" clip-rule="evenodd">
+                        <path
+                            d="M61.711 107.064c-11.23 0-16.256-4.338-16.256-10.764 0-6.227 5.025-10.608 16.256-10.608 11.186 0 16.212 4.359 16.212 10.608 0 6.427-5.004 10.764-16.212 10.764zm73.535-.789l-19.926-.016.008-2.613s2.02-.238 2.842-.346c.82-.109 1.143-.807 1.139-1.58-.002-.773.01-9.693.01-10.598-.002-.905-.416-1.428-1.301-1.555-.887-.127-2.719-.311-2.719-.311v-2.795h19.947c9.051 0 12.965 4.403 12.965 9.652 0 5.826-3.914 10.162-12.965 10.162zm-56.436.071v-2.717s2.382-.264 2.755-.328c.899-.158 1.223-.754 1.222-1.693V91.229c0-1.011-.445-1.572-1.41-1.68-.311-.034-2.568-.295-2.568-.295v-2.797s13.832-.011 14.043-.01c.752.003 1.267.363 1.664.871.079.102 10.487 13.857 10.487 13.857s.004-8.895 0-9.833c-.002-.938-.33-1.635-1.283-1.752-.297-.037-2.693-.318-2.693-.318v-2.815h12.729v2.791s-2.232.241-2.697.314c-1.094.17-1.275.911-1.281 1.699-.004.79 0 15.086 0 15.086l-9.982-.002c-.662 0-1.32-.301-1.678-.76-.236-.303-10.556-13.957-10.556-13.957s-.005 9.207 0 10.119.449 1.475 1.258 1.572c.808.098 2.72.311 2.72.311v2.717H78.81v-.001zm-70.299-.004l-.007-2.654s1.628-.191 2.635-.314c1.007-.125 1.35-.771 1.351-1.908V91.372c.002-1.014-.251-1.721-1.321-1.883-.373-.057-2.656-.31-2.656-.31l-.001-2.727h15.912l-.015 2.711s-2.373.268-2.687.313c-.813.113-1.27.639-1.276 1.778v3.153h12.265v-3.083c.001-.987-.292-1.729-1.215-1.852s-2.77-.333-2.77-.333l.006-2.688h15.912l-.013 2.713s-1.9.223-2.74.327c-.839.104-1.228.751-1.226 1.816.001.187-.005 9.213 0 10.354.006 1.143.643 1.568 1.167 1.637s2.818.324 2.818.324l-.006 2.719H28.733l.014-2.727s2.423-.27 2.732-.33c1.086-.219 1.236-.957 1.232-1.861s0-3.039 0-3.039H20.446s-.009 1.846 0 3.186.639 1.719 1.248 1.805c.77.1 2.728.316 2.728.316l.002 2.65H8.511v.001zm130.559-9.963c0-5.003-2.023-6.117-6.871-6.117h-5.092v12.169h5.092c4.848.001 6.871-1.003 6.871-6.052zm-70.287-.012c0-5.159-2.579-6.855-7.094-6.855s-7.094 1.696-7.094 6.855c0 5.227 2.58 6.891 7.094 6.891s7.094-1.664 7.094-6.891zm90.592 9.983h-12.73v-2.715l2.705-.359c.949-.123 1.328-.879 1.436-1.049.109-.17 6.209-10.052 6.74-10.937s-.029-1.561-.725-1.685c-.486-.087-3.523-.399-3.523-.399l-.002-2.75h15.533c.973.027 1.572 1.12 1.572 1.12l8.924 13.651c.721 1.102 1.271 1.908 2.156 2.039.883.129 2.779.35 2.779.35l.012 2.73h-17.199l.016-2.697s1.133-.15 2.168-.285c1.037-.135 1.908-.584 1.049-1.846-.859-1.26-.838-1.248-.838-1.248l-12.191.027s-.379.57-.971 1.486c-.59.914.033 1.492.908 1.6l2.182.271v2.696h-.001zm.102-9.647l7.678.039-3.883-6.14-3.795 6.101z"
+                            fill="#cc2229" />
+                    </g>
+                </svg>
+            </a>
+        </div>
+        <!--
+        <div class="menu-container">
+            <input type="checkbox" id="burger-toggle"> 
+            <label for="burger-toggle" class="burger-icon">
+                <svg class="burger-menu-svg-icon" width="32px" height="32px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"/>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/> 
+                    <g id="SVGRepo_iconCarrier"> <path d="M4 18L20 18" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/> <path d="M4 12L20 12" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/> <path d="M4 6L20 6" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/> </g>
+                </svg>
+            </label>
+            
+            <nav class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="#about-us">Модели</a></li>
+                    <li class="nav-item"><a href="#cars-images-list">Покупка</a></li>
+                    <li class="nav-item"><a href="#services">Дилеры</a></li>
+                    <li class="nav-item"><a href="#services">Услуги</a></li>
+                    <li class="nav-item"><a href="#services">Контакты</a></li>
+                    <li class="nav-item"><a href="#services">Поиск</a></li>
+                </ul>
+            </nav>
+            -->
+        </div>
+    </header>
+
+
+
+    <div class="video-container">
+        <video src="" type="video/webm" autoplay muted loop></video>
+    </div>
+
+
+    <main>
+        <dl>
+            <div>
+                <dt>Широкий выбор моделей</dt>
+                <dd>
+                    У нас представлены последние модели автомобилей, каждая из которых сочетает
+                    в себе элегантный дизайн, высокую производительность и передовые технологии. Независимо
+                    от ваших потребностей и предпочтений, у нас есть автомобиль, который удовлетворит все ваши ожидания.
+                </dd>
+            </div>
+            <div>
+                <dt>Профессиональная команда</dt>
+                <dd>
+                    Наши специалисты готовы предложить экспертные советы и помощь в выборе автомобиля, учитывая ваши
+                    потребности и бюджет. Мы стремимся сделать процесс покупки автомобиля удобным и приятным.
+                </dd>
+            </div>
+            <div>
+                <dt>Сервис и техническое обслуживание</dt>
+                <dd>
+                    Наш сервисный центр оснащен современным оборудованием, а наши высококвалифицированные механики
+                    гарантируют качественное обслуживание вашего автомобиля. Мы заботимся о сохранности и надежности
+                    вашего
+                    автомобиля.
+                </dd>
+            </div>
+            <div>
+                <dt>Акции и специальные предложения</dt>
+                <dd>
+                    В автосалоне мы регулярно предлагаем специальные акции, скидки и программы лояльности, чтобы
+                    сделать ваш выбор еще более выгодным и приятным.
+                </dd>
+            </div>
+
+            <div>
+                <dt>Стремление к инновациям и устойчивости</dt>
+                <dd>
+                    Мы активно поддерживаем и продвигаем принципы устойчивого развития, а также внедряем инновационные
+                    технологии для создания более безопасных и эффективных автомобилей.
+                </dd>
+            </div>
+            <div>
+                <dt>Гибкие финансовые решения</dt>
+                <dd>
+                    Мы предлагаем гибкие финансовые решения, включая кредиты, лизинг и программы обмена, чтобы сделать
+                    приобретение автомобиля еще доступнее и удобнее для наших клиентов.
+                </dd>
+            </div>
+        </dl>
+    </main>
+    <div class="global-menu-container">
+        <section class="menu-container">
+            <div class="menu-item">
+                <a href="../html/car-select.html"> <img class="menu-item-image"
+                        src="https://www.carpixel.net/w/d422c26f2cdddac652996588250c0855/honda-civic-coupe-car-wallpaper-12652.jpg"
+                        alt="automobiles">
+                    <p class="desc">АВТОМОБИЛИ</p>
+                    <div class="svg-container">
+                        <?xml version="1.0" encoding="utf-8"?>
+                        <svg class="svg-arrow" width="40px" height="40px" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4 12H20M20 12L16 8M20 12L16 16" stroke="#000000" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                </a>
+            </div>
+            <div class="menu-item">
+                <a href="../html/dealership.html"> <img class="menu-item-image"
+                        src="https://vlavirails.lv/files/data/project/9/main/HONDA.jpg" alt="dealership">
+                    <p class="desc">АВТОСАЛОН</p>
+                    <div class="svg-container">
+                        <svg class="svg-arrow" width="40px" height="40px" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4 12H20M20 12L16 8M20 12L16 16" stroke="#000000" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                </a>
+            </div>
+            <div class="menu-item">
+                <a href="../html/service.html"> <img class="menu-item-image"
+                        src="https://aaaengine.com/wp-content/uploads/2019/05/49-K20A2-Remanufactured-Engine-Integra-Type-R-Acura-RSX-Type-S-i-VTEC-K20-.jpg"
+                        alt="service">
+                    <p class="desc">СЕРВИС</p>
+                    <div class="svg-container">
+                        <svg class="svg-arrow" width="40px" height="40px" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4 12H20M20 12L16 8M20 12L16 16" stroke="#000000" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                </a>
+            </div>
+            <div class="menu-item">
+                <a href="../html/test-drive.html"> <img class="menu-item-image"
+                        src="https://s0.rbk.ru/v6_top_pics/resized/1024xH/media/img/7/40/754788777103407.jpeg"
+                        alt="test-drive">
+                    <p class="desc">ТЕСТ-ДРАЙВ</p>
+                    <div class="svg-container">
+                        <svg class="svg-arrow" width="40px" height="40px" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4 12H20M20 12L16 8M20 12L16 16" stroke="#000000" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                </a>
+            </div>
+            <div class="menu-item">
+                <a href="../html/offers.html"> <img class="menu-item-image" src="../pictures/offers.png" alt="offers">
+                    <p class="desc">АКЦИИ</p>
+                    <div class="svg-container">
+                        <svg class="svg-arrow" width="40px" height="40px" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4 12H20M20 12L16 8M20 12L16 16" stroke="#000000" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                </a>
+            </div>
+            <div class="menu-item">
+                <a href="../html/account.html"> <img class="menu-item-image" src="https://i.cenyavto.com/2020/11/WiOR.jpg" alt="account">
+                    <p class="desc">АККАУНТ</p>
+                    <div class="svg-container">
+                        <svg class="svg-arrow" width="40px" height="40px" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4 12H20M20 12L16 8M20 12L16 16" stroke="#000000" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                </a>
+            </div>
+        </section>
+    </div>
+
+
+    <footer> <!--нижний колонтитул сайта-->
+        <address> <!-- раздел конактой информации -->
+
+            <div class="about-us-container">
+                <h3>О нас</h3>
+                <p>"Автосалон Honda — ваш путь к японскому качеству и инновациям. Мы не просто продаем автомобили,
+                    мы открываем двери в мир стиля и надежности. Приходите и почувствуйте разницу вместе с нами."
+                </p>
+            </div>
+
+            <div class="contacts-container">
+                <h3>Связаться с нами
+                    </h2>
+                    <ul>
+                        <li>
+                            <svg class="contacts-svg-icon" width="24px" height="24px" viewBox="0 0 32 32" version="1.1"
+                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                xmlns:sketch="http://www.bohemiancoding.com/sketch/ns" fill="#000000">
+                                <g id="SVGRepo_bgCarrier" stroke-width="0" />
+                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" />
+                                <g id="SVGRepo_iconCarrier">
+                                    <defs> </defs>
+                                    <g id="Page-1" stroke="none" stroke fill-rule="evenodd" sketch:type="MSPage">
+                                        <g id="Icon-Set-Filled" sketch:type="MSLayerGroup"
+                                            transform="translate(-258.000000, -309.000000)" fill="#ffffff">
+                                            <path
+                                                d="M289.073,313.433 L286.195,310.563 C285.401,309.77 284.112,309.77 283.317,310.563 L279,316.303 C278.341,317.274 278.206,318.38 279,319.173 L280.762,320.93 C279.456,322.68 277.888,324.588 276.123,326.348 C274.127,328.338 271.907,330.147 269.911,331.633 L268.208,329.936 C267.414,329.143 266.305,329.277 265.33,329.936 L259.574,334.241 C258.609,334.906 258.779,336.318 259.574,337.111 L262.452,339.98 C264.042,341.566 266.109,341.058 268.208,339.98 C268.208,339.98 274.561,336.424 280,331 C285.116,325.898 289.073,319.173 289.073,319.173 C289.898,316.91 290.663,315.018 289.073,313.433"
+                                                id="phone" sketch:type="MSShapeGroup"> </path>
+                                        </g>
+                                    </g>
+                                </g>
+
+                            </svg>
+                            <a class="contact phone-number" href="tel:88001000070">+7 (985) 567-58-45</a><br>
+                            <a class="contact phone-number" href="tel:88001000076">+7 (968) 347-23-18</a>
+                        </li>
+                        <li>
+                            <svg class="contacts-svg-icon" width="32px" height="32px" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g id="SVGRepo_bgCarrier" stroke-width="0" />
+                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" />
+                                <g id="SVGRepo_iconCarrier">
+                                    <g id="Communication / Mail">
+                                        <path id="Vector"
+                                            d="M4 6L10.1076 10.6123L10.1097 10.614C10.7878 11.1113 11.1271 11.3601 11.4988 11.4562C11.8272 11.5412 12.1725 11.5412 12.501 11.4562C12.8729 11.36 13.2132 11.1105 13.8926 10.6123C13.8926 10.6123 17.8101 7.60594 20 6M3 15.8002V8.2002C3 7.08009 3 6.51962 3.21799 6.0918C3.40973 5.71547 3.71547 5.40973 4.0918 5.21799C4.51962 5 5.08009 5 6.2002 5H17.8002C18.9203 5 19.4796 5 19.9074 5.21799C20.2837 5.40973 20.5905 5.71547 20.7822 6.0918C21 6.5192 21 7.07899 21 8.19691V15.8036C21 16.9215 21 17.4805 20.7822 17.9079C20.5905 18.2842 20.2837 18.5905 19.9074 18.7822C19.48 19 18.921 19 17.8031 19H6.19691C5.07899 19 4.5192 19 4.0918 18.7822C3.71547 18.5905 3.40973 18.2842 3.21799 17.9079C3 17.4801 3 16.9203 3 15.8002Z"
+                                            stroke="#ffffff" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </g>
+                                </g>
+                            </svg>
+                            <a class="contact email" href="mailto:kukuon04@gmail.com">honda_official@gmail.com</a>
+                        </li>
+                        <li>
+                            <svg class="contacts-svg-icon" width="32px" height="32px" viewBox="0 0 192 192"
+                                xmlns="http://www.w3.org/2000/svg" fill="none">
+                                <g id="SVGRepo_bgCarrier" stroke-width="0" />
+                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" />
+                                <g id="SVGRepo_iconCarrier">
+                                    <path stroke="#ffffff" stroke-width="12"
+                                        d="M23.073 88.132s65.458-26.782 88.16-36.212c8.702-3.772 38.215-15.843 38.215-15.843s13.621-5.28 12.486 7.544c-.379 5.281-3.406 23.764-6.433 43.756-4.54 28.291-9.459 59.221-9.459 59.221s-.756 8.676-7.188 10.185c-6.433 1.509-17.027-5.281-18.919-6.79-1.513-1.132-28.377-18.106-38.214-26.404-2.649-2.263-5.676-6.79.378-12.071 13.621-12.447 29.891-27.913 39.728-37.72 4.54-4.527 9.081-15.089-9.837-2.264-26.864 18.483-53.35 35.835-53.35 35.835s-6.053 3.772-17.404.377c-11.351-3.395-24.594-7.921-24.594-7.921s-9.08-5.659 6.433-11.693Z" />
+                                </g>
+                            </svg>
+                            <a href="">@honda_official</a>
+                        </li>
+                    </ul>
+            </div>
+
+            <div class="social-container">
+                <h3>Соц-сети</h3>
+                <ul>
+                    <li>
+                        <a href="#" class="social-button">
+                            <div class="background-container"></div>
+                            <svg class="social-svg-icon" width="22px" height="22px" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="m23.456 5.784c-.27.849-.634 1.588-1.09 2.259l.019-.03q-.672 1.12-1.605 2.588-.8 1.159-.847 1.2c-.138.173-.234.385-.267.618l-.001.007c.027.212.125.397.268.535l.4.446q3.21 3.299 3.611 4.548c.035.092.055.198.055.309 0 .194-.062.373-.167.52l.002-.003c-.176.181-.422.293-.694.293-.03 0-.061-.001-.09-.004h.004-2.631c-.001 0-.003 0-.005 0-.337 0-.647-.118-.89-.314l.003.002c-.354-.291-.669-.606-.951-.948l-.009-.012q-.691-.781-1.226-1.315-1.782-1.694-2.63-1.694c-.021-.002-.045-.003-.07-.003-.165 0-.319.051-.446.138l.003-.002c-.104.13-.167.298-.167.479 0 .036.002.07.007.105v-.004c-.027.314-.043.679-.043 1.048 0 .119.002.237.005.355v-.017 1.159c.01.047.016.101.016.156 0 .242-.11.458-.282.601l-.001.001c-.387.177-.839.281-1.316.281-.102 0-.202-.005-.301-.014l.013.001c-1.574-.03-3.034-.491-4.275-1.268l.035.02c-1.511-.918-2.763-2.113-3.717-3.525l-.027-.042c-.906-1.202-1.751-2.56-2.471-3.992l-.07-.154c-.421-.802-.857-1.788-1.233-2.802l-.06-.185c-.153-.456-.264-.986-.31-1.535l-.002-.025q0-.758.892-.758h2.63c.024-.002.052-.003.081-.003.248 0 .477.085.658.228l-.002-.002c.2.219.348.488.421.788l.003.012c.484 1.367.997 2.515 1.587 3.615l-.067-.137c.482.97 1.015 1.805 1.623 2.576l-.023-.031q.8.982 1.248.982c.009.001.02.001.032.001.148 0 .277-.08.347-.2l.001-.002c.074-.19.117-.411.117-.641 0-.049-.002-.098-.006-.146v.006-3.879c-.021-.457-.133-.884-.32-1.267l.008.019c-.124-.264-.273-.492-.45-.695l.003.004c-.164-.164-.276-.379-.311-.619l-.001-.006c0-.17.078-.323.2-.423l.001-.001c.121-.111.283-.178.46-.178h.008 4.146c.022-.003.047-.004.073-.004.195 0 .37.088.486.226l.001.001c.103.188.164.413.164.651 0 .038-.002.075-.005.112v-.005 5.173c-.002.024-.003.052-.003.08 0 .184.051.357.139.504l-.002-.004c.073.108.195.178.333.178h.001c.176-.012.336-.07.471-.162l-.003.002c.272-.187.506-.4.709-.641l.004-.005c.607-.686 1.167-1.444 1.655-2.25l.039-.07c.344-.57.716-1.272 1.053-1.993l.062-.147.446-.892c.155-.446.571-.76 1.06-.76.019 0 .038 0 .057.001h-.003 2.631q1.066 0 .8.981z" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="social-button">
+                            <div class="background-container"></div>
+                            <svg class="social-svg-icon" width="22px" height="22px" viewBox="0 0 1920 1920"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M1168.737 487.897c44.672-41.401 113.824-36.889 118.9-36.663l289.354-.113 6.317-417.504L1539.65 22.9C1511.675 16.02 1426.053 0 1237.324 0 901.268 0 675.425 235.206 675.425 585.137v93.97H337v451.234h338.425V1920h451.234v-789.66h356.7l62.045-451.233H1126.66v-69.152c0-54.937 14.214-96.112 42.078-122.058"
+                                    fill-rule="evenodd" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="social-button">
+                            <div class="background-container"></div>
+                            <svg class="social-svg-icon" width="22px" height="22px" viewBox="0 -3 20 20" version="1.1"
+                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <defs>
+                                </defs>
+                                <g id="Page-1" stroke="none" stroke-width="1">
+                                    <g id="Dribbble-Light-Preview" transform="translate(-300.000000, -7442.000000)">
+                                        <g id="icons" transform="translate(56.000000, 160.000000)">
+                                            <path
+                                                d="M251.988432,7291.58588 L251.988432,7285.97425 C253.980638,7286.91168 255.523602,7287.8172 257.348463,7288.79353 C255.843351,7289.62824 253.980638,7290.56468 251.988432,7291.58588 M263.090998,7283.18289 C262.747343,7282.73013 262.161634,7282.37809 261.538073,7282.26141 C259.705243,7281.91336 248.270974,7281.91237 246.439141,7282.26141 C245.939097,7282.35515 245.493839,7282.58153 245.111335,7282.93357 C243.49964,7284.42947 244.004664,7292.45151 244.393145,7293.75096 C244.556505,7294.31342 244.767679,7294.71931 245.033639,7294.98558 C245.376298,7295.33761 245.845463,7295.57995 246.384355,7295.68865 C247.893451,7296.0008 255.668037,7296.17532 261.506198,7295.73552 C262.044094,7295.64178 262.520231,7295.39147 262.895762,7295.02447 C264.385932,7293.53455 264.28433,7285.06174 263.090998,7283.18289"
+                                                id="youtube-[#168]"></path>
+                                        </g>
+                                    </g>
+                                </g>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="refers-container">
+                <h3>Полезные ссылки</h3>
+                <ul>
+                    <li><a href="https://www.honda.ru/">Официальный сайт Honda в России</a></li>
+                    <li><a>Стать дилером</a></li>
+                    <li>ЧАВО</li>
+                </ul>
+            </div>
+        </address>
+
+        <p class="copyright"><small>Copyright © 2023 qqsh Inc All Right Reserved</small></p>
+    </footer>
+</body>
+
+</html>

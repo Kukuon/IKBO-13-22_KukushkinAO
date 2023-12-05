@@ -1,0 +1,154 @@
+@import url("service.html");
+
+:root {
+  --main-background-color: rgb(18, 18, 18);
+  --header-color: rgb(12, 12, 12);
+  --main-font-color: white;
+  --main-gradient: linear-gradient(to right, #611700, #ff0000);
+}
+
+/*Селектор относящийся ко всем элементам на странице*/
+* {
+  font-family: 'Jost', sans-serif;
+  color: var(--main-font-color);
+}
+
+/*Основное тело*/
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--main-background-color);
+  /*Цвет фона на всей страницы*/
+
+}
+
+header {
+  display: flex;
+  position: fixed;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--header-color);
+  height: 70px;
+  max-height: 100%;
+  white-space: nowrap;
+  width: 100%;
+  box-shadow: 5px 0px 10px black;
+  z-index: 6;
+}
+
+h1 {
+  margin: 0px 0px 30px 0px;
+  padding-top: 100px;
+  text-align: center;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+
+
+
+
+#custom-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 0 auto;
+  background: var(--main-gradient);
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.form-row {
+  margin-bottom: 15px;
+}
+
+.form-row label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-row input,
+.form-row select,
+.form-row button {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  color: black;
+}
+
+option {
+  color: black;
+}
+
+.form-column {
+  display: inline-block;
+  width: 50%;
+  /* Изменил ширину на 100% */
+  margin-bottom: 10px;
+  /* Добавил отступ снизу */
+}
+
+.last-form {
+  display: flex;
+}
+
+#model {
+  margin-right: 10px;
+}
+
+#typeFix {
+  margin-left: 10px;
+}
+
+
+
+
+
+.service-offers {
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 2%;
+  /* Центрирование таблицы */
+  border-spacing: 30px;
+  /* Расстояние между ячейками */
+  border-collapse: separate;
+  /* Раздельные границы для ячеек */
+}
+
+.service-offers td {
+  border: 1px solid white;
+  /* Белая окантовка */
+  padding: 10px;
+  /* Добавление отступов внутри ячеек */
+
+}
+
+
+
+footer {
+  background-color: var(--header-color);
+  padding: 10px 20px 10px 20px;
+  
+
+}
+
+.hover-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 14px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 25px;
+  color: #fff;
+  background: linear-gradient(to right, #7e0000 50%, #990101 50%);
+  background-size: 200% 100%;
+  background-position: left bottom;
+  border: 2px solid #470303;
+  transition: background 0.5s ease-in-out;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.hover-btn:hover {
+  background-position: right bottom;
+}
