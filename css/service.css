@@ -19,6 +19,7 @@ body {
   padding: 0;
   background-color: var(--main-background-color);
   /*Цвет фона на всей страницы*/
+  height: 100%;
 
 }
 
@@ -44,7 +45,15 @@ h1 {
   font-family: 'JetBrains Mono', monospace;
 }
 
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
 
+main {  
+  flex: 1 1 auto;
+}
 
 
 
@@ -55,8 +64,8 @@ h1 {
   margin: 0 auto;
   background: var(--main-gradient);
   padding: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
+  box-shadow: 0px 0px 5px rgb(151, 4, 4);
+  border-radius: 15px;
 }
 
 .form-row {

@@ -21,6 +21,7 @@ body {
   margin: 0;
   background-color: var(--main-background-color);
   /*Цвет фона на всей страницы*/
+  height: 100%;
 }
 
 header {
@@ -41,6 +42,17 @@ header {
 
   box-shadow: 5px 0px 10px black;
   z-index: 1;
+}
+
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+}
+
+main {
+  flex: 1 1 auto;
 }
 
 /* стилизация головной части сайта для ПК */
@@ -375,7 +387,7 @@ address {
     grid-template-rows: repeat(2, 1fr);
   }
 
-  .social-container ul {
+  #social-container ul {
     display: flex;
   }
 }
@@ -385,7 +397,7 @@ address {
     grid-template-rows: repeat(4, 1fr);
   }
 
-  .social-container ul {
+  #social-container ul {
     display: flex;
   }
 }
@@ -407,7 +419,7 @@ address {
 }
 
 /* social links */
-.social-container ul {
+#social-container ul {
   list-style: none;
 
 }
@@ -417,7 +429,7 @@ address {
   height: 40px;
 }
 
-.social-container ul li {
+#social-container ul li {
 
   position: relative;
   overflow: hidden;
@@ -431,7 +443,7 @@ address {
   margin-left: 15px;
 }
 
-.social-container ul li:hover .background-container {
+#social-container ul li:hover .background-container {
   height: 40px;
 }
 

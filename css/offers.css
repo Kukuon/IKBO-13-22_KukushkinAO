@@ -16,9 +16,9 @@
 /*Основное тело*/
 body {
     margin: 0;
-
     background-color: var(--main-background-color);
     /*Цвет фона на всей страницы*/
+    height: 100%;
 }
 
 header {
@@ -43,14 +43,22 @@ h1 {
     text-align: center;
 }
 
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
 
+main {
+    flex: 1 1 auto;
+}
 
 
 form {
     display: flex;
     flex-direction: column;
     background: var(--main-gradient);
-    width: 600px;
+    max-width: 600px;
     margin: 0 auto;
     padding: 20px;
     border-radius: 15px;

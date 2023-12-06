@@ -5,7 +5,7 @@ function costCalculate() {
     var tradeInDiscount = document.getElementById('tradeInDiscount').checked ? 0.8 : 1;
     var promoCodeInput = document.getElementById('promoCode').value.toLowerCase();
     var validPromoCode = 'promocode123'; // Правильный промокод
-    var promoCodeDiscount = promoCodeInput === validPromoCode ? 0.9 : 1;
+    var promoCodeDiscount = promoCodeInput === validPromoCode ? 0.95 : 1;
 
     // Модель автомобиля
     var carModel = document.getElementById('carModel').value;
@@ -24,7 +24,7 @@ function costCalculate() {
 
     var transTypeCosts = {
         'automatic': 1.1,
-        'manual': 1.05,
+        'manual': 1.0,
     };
 
     var transTypeCost = transTypeCosts[transType];
@@ -33,7 +33,7 @@ function costCalculate() {
     var engineType = document.getElementById('engineType').value;
 
     var engineTypeCosts = {
-        'var1': 1.03,
+        'var1': 1.00,
         'var2': 1.13,
         'var3': 1.23,
     };

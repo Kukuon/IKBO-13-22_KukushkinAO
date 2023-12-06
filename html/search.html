@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Рассчёт стоимости</title>
+    <title>Поиск</title>
     <meta charset="utf-8"> <!-- Кодировка старницы -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Для совместимости с IE-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,7 +14,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/offers.css"> <!--подключение css файла для стилизации страницы-->
+    <link rel="stylesheet" href="../css/search.css"> <!--подключение css файла для стилизации страницы-->
 </head>
 
 <body>
@@ -32,71 +32,18 @@
                 </a>
             </div>
         </header>
-        <main>
-            <h1>РАССЧЁТ СТОИМОСТИ</h1>
+        <main class="main">
+            <h1>ПОИСК</h1>
 
-            <form id="costCalculation">
-                <label class="desc">Спец-предложения</label>
-                <label><input type="checkbox" id="loyaltyDiscount"> Скидка 10% на первую покупку</label>
-                <label><input type="checkbox" id="tradeInDiscount"> Скидка 20% по trade-in</label>
+            <div class="search-container">
+                <input type="text" id="searchInput" oninput="performSearch()">
+                <ul id="searchResults"></ul>
+            </div>
 
-                <label class="desc" for="carModel">Модель</label>
-                <select id="carModel" name="carModel">
-                    <option value="cr-v"> CR-V 2.999.990 ₽</option>
-                    <option value="accord"> Accord 1.999.990 ₽</option>
-                    <option value="civic">Civic 1.499.90 ₽</option>
-                    <option value="nsx"> NSX 3.499.990 ₽</option>
-                </select>
-
-                <label class="desc" for="transType">Тип КПП</label>
-                <select id="transType" name="transType">
-                    <option value="manual">Механическая (по умолчанию)</option>
-                    <option value="automatic"> Автоматическая +10% к стоимости</option>
-
-                </select>
-
-
-                <label class="desc" for="engineType"> Двигатель</label>
-                <select id="engineType" name="engineType">
-                    <option value="var1"> 150 л.с. (по умолчанию)</option>
-                    <option value="var2"> 200 л.с. +13% к стоимости</option>
-                    <option value="var3"> 250 л.с. +23% к стоимости</option>ыы
-                </select>
-
-                <label class="desc" for="wheelType">Тип дисков</label>
-                <select id="wheelType" name="wheelType">
-                    <option value="stampedWheel15"> Штампованные, 15 дюймов (по умолчанию)</option>
-                    <option value="alloyWheel17"> Литые, 17 дюймов +4% к стоимости</option>
-                    <option value="alloyWheel19"> Литые, 19 дюймов +5% к стоиомсти</option>
-
-                    <option value="stampedWheel17"> Штампованные, 17 дюймов +2% к стоимости </option>
-
-                </select>
-
-                <label class="desc">Дополнительные опции</label>
-                <label><input type="checkbox" id="leatherSeats"> Кожанный салон +30.999 ₽</label>
-                <label><input type="checkbox" id="hatch"> Люк +29.990 ₽</label>
-                <label><input type="checkbox" id="navigation"> Встроенная навигационная система +8.990 ₽</label>
-                <label><input type="checkbox" id="ledHeadlights"> Светодиодные фары +12.990 ₽</label>
-                <label><input type="checkbox" id="fogLihts"> Противотуманные фары +8.990 ₽</label>
-                <label><input type="checkbox" id="reflectors"> Рефлекторы +3.990 ₽</label>
-                <label><input type="checkbox" id="keylessAccess"> Безключевой доступ +5.990 ₽</label>
-                <label><input type="checkbox" id="reaViewCamera"> Камера заднего вида +7.990 ₽</label>
-                <label><input type="checkbox" id="parkingSensors"> Парктроники +4.990 ₽</label>
-
-
-
-
-                <label class="desc" for="promoCode">Применить промокод</label>
-                <input type="text" id="promoCode" placeholder="Введите промокод">
-
-                <button type="button" onclick="costCalculate()">Рассчитать стоимость</button>
-
-                <div id="totalCost"></div>
-
-                <script src="../java-script/cost-calculation.js"></script>
-            </form>
+            <script src="../java-script/search.js"></script>
         </main>
+
+
         <footer>
             <a href="main.html" class="hover-btn">Вернуться на главную</a>
             <p class="copyright"><small>Copyright © 2023 qqsh Inc All Right Reserved</small></p>
