@@ -1,55 +1,12 @@
-@import url("main.html");
-/*Связь с html файлом*/
-
-
-:root {
-  --main-background-color: rgb(18, 18, 18);
-  --header-color: rgb(12, 12, 12);
-  --main-font-color: white;
-  --main-gradient: linear-gradient(to right, #611700, #ff0000);
-}
-
-/*Селектор относящийся ко всем элементам на странице*/
-* {
-  font-family: 'Jost', sans-serif;
-  color: var(--main-font-color);
-}
-
-/*Основное тело*/
-body {
-  padding: 0;
-  margin: 0;
-  background-color: var(--main-background-color);
-  /*Цвет фона на всей страницы*/
-  height: 100%;
-}
-
-header {
-  display: flex;
-  position: fixed;
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-items: center;
-  background-color: var(--header-color);
-  height: 70px;
-  max-height: 100%;
-  white-space: nowrap;
-  width: 100%;
-  box-shadow: 5px 0px 10px black;
-  z-index: 1;
-}
-
-.wrapper {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.main-slogan {
+  margin: 100px 0px 50px 0px;
+  font-family: 'JetBrains Mono', monospace;
+  text-align: center;
 }
 
 .main {
   flex: 1 1 auto;
 }
-
-
 
 /* main section */
 main {
@@ -59,7 +16,6 @@ main {
 main dl {
   display: grid;
   grid-gap: 10px;
-
 }
 
 @media screen and (min-width: 1001px) {
@@ -97,11 +53,6 @@ main dl dd {
   margin-right: 5px;
   padding-bottom: 20px;
 }
-
-
-
-
-
 
 
 
@@ -379,4 +330,7 @@ button:hover {
   background-color: #686868;
   transform: scale(1.15);
   /* Увеличиваем размер при наведении */
+}
+.refer:visited {
+  color: rgb(146, 146, 146);
 }

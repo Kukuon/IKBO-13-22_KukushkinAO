@@ -17,14 +17,17 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/general.css"> <!--подключение css файла для стилизации страницы-->
+</head>
 </head>
 
 
 <body> <!-- Тело страницы -->
     <div class="wrapper">
+
         <header>
             <div class="head-logo">
-                <a href="main.html"> <!--изображение логотипа-->
+                <a href="main.html">
                     <svg width="200" viewBox="0 0 192.756 192.756" xmlns="http://www.w3.org/2000/svg">
                         <g fill-rule="evenodd" clip-rule="evenodd">
                             <path
@@ -34,16 +37,45 @@
                     </svg>
                 </a>
             </div>
+
+            <ul class="menu-pc">
+                <li><a href="../html/car-select.html">Автомобили</a></li>
+                <li><a href="../html/dealership.html">Автосалон</a></li>
+                <li><a href="../html/service.html">Сервис</a></li>
+                <li><a href="../html/offers.html">Предложения</a></li>
+                <li><a href="../html/account.html">Аккаунт</a></li>
+                <li><a href="../html/search.html">Поиск</a></li>
+            </ul>
+
+            <ul class="menu">
+                <li><a href="../html/car-select.html">Автомобили</a></li>
+                <li><a href="../html/dealership.html">Автосалон</a></li>
+                <li><a href="../html/service.html">Сервис</a></li>
+                <li><a href="../html/offers.html">Предложения</a></li>
+                <li><a href="../html/account.html">Аккаунт</a></li>
+                <li><a href="../html/search.html">Поиск</a></li>
+            </ul>
+
+            <div class="burger-menu" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+
+            <script>
+                function toggleMenu() {
+                    var menu = document.querySelector('.menu');
+                    menu.classList.toggle('show');
+                    var links = document.querySelector('.menu');
+                    links.classList.toggle('active');
+                }
+            </script>
         </header>
 
 
         <main class="main">
 
-
-            <div class="video-container">
-                <video src="" type="video/webm" autoplay muted loop></video>
-            </div>
-
+            <h1 class="main-slogan">ДОБРО ПОЖАЛОВАТЬ В АВТОСАЛОН HONDA</h1>
 
             <main>
                 <dl>
@@ -101,6 +133,7 @@
                     </div>
                 </dl>
             </main>
+
             <div class="global-menu-container">
                 <section class="menu-container">
                     <div class="menu-item">
@@ -156,24 +189,6 @@
                         </a>
                     </div>
                     <div class="menu-item">
-                        <a href="../html/search.html"> <img class="menu-item-image"
-                                src="https://s0.rbk.ru/v6_top_pics/resized/1024xH/media/img/7/40/754788777103407.jpeg"
-                                alt="search">
-                            <p class="desc">ПОИСК</p>
-                            <div class="svg-container">
-                                <svg width="40px" height="40px" viewBox="0 0 24 24" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                                    <g id="SVGRepo_iconCarrier">
-                                        <path d="M4 12H20M20 12L16 8M20 12L16 16" stroke="#ffffff" stroke-width="2"
-                                            stroke-linecap="round" stroke-linejoin="round"></path>
-                                    </g>
-                                </svg>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="menu-item">
                         <a href="../html/offers.html"> <img class="menu-item-image" src="../pictures/offers.png"
                                 alt="offers">
                             <p class="desc">ПРЕДЛОЖЕНИЯ</p>
@@ -207,10 +222,28 @@
                             </div>
                         </a>
                     </div>
+                    <div class="menu-item">
+                        <a href="../html/search.html"> <img class="menu-item-image"
+                                src="https://s0.rbk.ru/v6_top_pics/resized/1024xH/media/img/7/40/754788777103407.jpeg"
+                                alt="search">
+                            <p class="desc">ПОИСК</p>
+                            <div class="svg-container">
+                                <svg width="40px" height="40px" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                    <g id="SVGRepo_iconCarrier">
+                                        <path d="M4 12H20M20 12L16 8M20 12L16 16" stroke="#ffffff" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round"></path>
+                                    </g>
+                                </svg>
+                            </div>
+                        </a>
+                    </div>
                 </section>
             </div>
-
         </main>
+
         <footer> <!--нижний колонтитул сайта-->
             <address id="contacts"> <!-- раздел конактой информации -->
 
@@ -222,61 +255,59 @@
                 </div>
 
                 <div id="contacts-container">
-                    <h3>Связаться с нами
-                        </h2>
-                        <ul>
-                            <li>
-                                <svg class="contacts-svg-icon" width="24px" height="24px" viewBox="0 0 32 32"
-                                    version="1.1" xmlns="http://www.w3.org/2000/svg"
-                                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                                    xmlns:sketch="http://www.bohemiancoding.com/sketch/ns" fill="#000000">
-                                    <g id="SVGRepo_bgCarrier" stroke-width="0" />
-                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" />
-                                    <g id="SVGRepo_iconCarrier">
-                                        <defs> </defs>
-                                        <g id="Page-1" stroke="none" stroke fill-rule="evenodd" sketch:type="MSPage">
-                                            <g id="Icon-Set-Filled" sketch:type="MSLayerGroup"
-                                                transform="translate(-258.000000, -309.000000)" fill="#ffffff">
-                                                <path
-                                                    d="M289.073,313.433 L286.195,310.563 C285.401,309.77 284.112,309.77 283.317,310.563 L279,316.303 C278.341,317.274 278.206,318.38 279,319.173 L280.762,320.93 C279.456,322.68 277.888,324.588 276.123,326.348 C274.127,328.338 271.907,330.147 269.911,331.633 L268.208,329.936 C267.414,329.143 266.305,329.277 265.33,329.936 L259.574,334.241 C258.609,334.906 258.779,336.318 259.574,337.111 L262.452,339.98 C264.042,341.566 266.109,341.058 268.208,339.98 C268.208,339.98 274.561,336.424 280,331 C285.116,325.898 289.073,319.173 289.073,319.173 C289.898,316.91 290.663,315.018 289.073,313.433"
-                                                    id="phone" sketch:type="MSShapeGroup"> </path>
-                                            </g>
+                    <h3>Связаться с нами</h3>
+                    <ul>
+                        <li>
+                            <svg class="contacts-svg-icon" width="24px" height="24px" viewBox="0 0 32 32" version="1.1"
+                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                xmlns:sketch="http://www.bohemiancoding.com/sketch/ns" fill="#000000">
+                                <g id="SVGRepo_bgCarrier" stroke-width="0" />
+                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" />
+                                <g id="SVGRepo_iconCarrier">
+                                    <defs> </defs>
+                                    <g id="Page-1" stroke="none" stroke fill-rule="evenodd" sketch:type="MSPage">
+                                        <g id="Icon-Set-Filled" sketch:type="MSLayerGroup"
+                                            transform="translate(-258.000000, -309.000000)" fill="#ffffff">
+                                            <path
+                                                d="M289.073,313.433 L286.195,310.563 C285.401,309.77 284.112,309.77 283.317,310.563 L279,316.303 C278.341,317.274 278.206,318.38 279,319.173 L280.762,320.93 C279.456,322.68 277.888,324.588 276.123,326.348 C274.127,328.338 271.907,330.147 269.911,331.633 L268.208,329.936 C267.414,329.143 266.305,329.277 265.33,329.936 L259.574,334.241 C258.609,334.906 258.779,336.318 259.574,337.111 L262.452,339.98 C264.042,341.566 266.109,341.058 268.208,339.98 C268.208,339.98 274.561,336.424 280,331 C285.116,325.898 289.073,319.173 289.073,319.173 C289.898,316.91 290.663,315.018 289.073,313.433"
+                                                id="phone" sketch:type="MSShapeGroup"> </path>
                                         </g>
                                     </g>
+                                </g>
 
-                                </svg>
-                                <a class="contact phone-number" href="tel:88001000070">+7 (985) 567-58-45</a><br>
-                                <a class="contact phone-number" href="tel:88001000076">+7 (968) 347-23-18</a>
-                            </li>
-                            <li>
-                                <svg class="contacts-svg-icon" width="32px" height="32px" viewBox="0 0 24 24"
-                                    fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <g id="SVGRepo_bgCarrier" stroke-width="0" />
-                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" />
-                                    <g id="SVGRepo_iconCarrier">
-                                        <g id="Communication / Mail">
-                                            <path id="Vector"
-                                                d="M4 6L10.1076 10.6123L10.1097 10.614C10.7878 11.1113 11.1271 11.3601 11.4988 11.4562C11.8272 11.5412 12.1725 11.5412 12.501 11.4562C12.8729 11.36 13.2132 11.1105 13.8926 10.6123C13.8926 10.6123 17.8101 7.60594 20 6M3 15.8002V8.2002C3 7.08009 3 6.51962 3.21799 6.0918C3.40973 5.71547 3.71547 5.40973 4.0918 5.21799C4.51962 5 5.08009 5 6.2002 5H17.8002C18.9203 5 19.4796 5 19.9074 5.21799C20.2837 5.40973 20.5905 5.71547 20.7822 6.0918C21 6.5192 21 7.07899 21 8.19691V15.8036C21 16.9215 21 17.4805 20.7822 17.9079C20.5905 18.2842 20.2837 18.5905 19.9074 18.7822C19.48 19 18.921 19 17.8031 19H6.19691C5.07899 19 4.5192 19 4.0918 18.7822C3.71547 18.5905 3.40973 18.2842 3.21799 17.9079C3 17.4801 3 16.9203 3 15.8002Z"
-                                                stroke="#ffffff" stroke-width="2" stroke-linecap="round"
-                                                stroke-linejoin="round" />
-                                        </g>
+                            </svg>
+                            <a class="contact phone-number" href="tel:88001000070">+7 (985) 567-58-45</a><br>
+                            <a class="contact phone-number" href="tel:88001000076">+7 (968) 347-23-18</a>
+                        </li>
+                        <li>
+                            <svg class="contacts-svg-icon" width="32px" height="32px" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g id="SVGRepo_bgCarrier" stroke-width="0" />
+                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" />
+                                <g id="SVGRepo_iconCarrier">
+                                    <g id="Communication / Mail">
+                                        <path id="Vector"
+                                            d="M4 6L10.1076 10.6123L10.1097 10.614C10.7878 11.1113 11.1271 11.3601 11.4988 11.4562C11.8272 11.5412 12.1725 11.5412 12.501 11.4562C12.8729 11.36 13.2132 11.1105 13.8926 10.6123C13.8926 10.6123 17.8101 7.60594 20 6M3 15.8002V8.2002C3 7.08009 3 6.51962 3.21799 6.0918C3.40973 5.71547 3.71547 5.40973 4.0918 5.21799C4.51962 5 5.08009 5 6.2002 5H17.8002C18.9203 5 19.4796 5 19.9074 5.21799C20.2837 5.40973 20.5905 5.71547 20.7822 6.0918C21 6.5192 21 7.07899 21 8.19691V15.8036C21 16.9215 21 17.4805 20.7822 17.9079C20.5905 18.2842 20.2837 18.5905 19.9074 18.7822C19.48 19 18.921 19 17.8031 19H6.19691C5.07899 19 4.5192 19 4.0918 18.7822C3.71547 18.5905 3.40973 18.2842 3.21799 17.9079C3 17.4801 3 16.9203 3 15.8002Z"
+                                            stroke="#ffffff" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
                                     </g>
-                                </svg>
-                                <a class="contact email" href="mailto:kukuon04@gmail.com">honda_official@gmail.com</a>
-                            </li>
-                            <li>
-                                <svg class="contacts-svg-icon" width="32px" height="32px" viewBox="0 0 192 192"
-                                    xmlns="http://www.w3.org/2000/svg" fill="none">
-                                    <g id="SVGRepo_bgCarrier" stroke-width="0" />
-                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" />
-                                    <g id="SVGRepo_iconCarrier">
-                                        <path stroke="#ffffff" stroke-width="12"
-                                            d="M23.073 88.132s65.458-26.782 88.16-36.212c8.702-3.772 38.215-15.843 38.215-15.843s13.621-5.28 12.486 7.544c-.379 5.281-3.406 23.764-6.433 43.756-4.54 28.291-9.459 59.221-9.459 59.221s-.756 8.676-7.188 10.185c-6.433 1.509-17.027-5.281-18.919-6.79-1.513-1.132-28.377-18.106-38.214-26.404-2.649-2.263-5.676-6.79.378-12.071 13.621-12.447 29.891-27.913 39.728-37.72 4.54-4.527 9.081-15.089-9.837-2.264-26.864 18.483-53.35 35.835-53.35 35.835s-6.053 3.772-17.404.377c-11.351-3.395-24.594-7.921-24.594-7.921s-9.08-5.659 6.433-11.693Z" />
-                                    </g>
-                                </svg>
-                                <a href="">@honda_official</a>
-                            </li>
-                        </ul>
+                                </g>
+                            </svg>
+                            <a class="contact email" href="mailto:kukuon04@gmail.com">honda_official@gmail.com</a>
+                        </li>
+                        <li>
+                            <svg class="contacts-svg-icon" width="32px" height="32px" viewBox="0 0 192 192"
+                                xmlns="http://www.w3.org/2000/svg" fill="none">
+                                <g id="SVGRepo_bgCarrier" stroke-width="0" />
+                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" />
+                                <g id="SVGRepo_iconCarrier">
+                                    <path stroke="#ffffff" stroke-width="12"
+                                        d="M23.073 88.132s65.458-26.782 88.16-36.212c8.702-3.772 38.215-15.843 38.215-15.843s13.621-5.28 12.486 7.544c-.379 5.281-3.406 23.764-6.433 43.756-4.54 28.291-9.459 59.221-9.459 59.221s-.756 8.676-7.188 10.185c-6.433 1.509-17.027-5.281-18.919-6.79-1.513-1.132-28.377-18.106-38.214-26.404-2.649-2.263-5.676-6.79.378-12.071 13.621-12.447 29.891-27.913 39.728-37.72 4.54-4.527 9.081-15.089-9.837-2.264-26.864 18.483-53.35 35.835-53.35 35.835s-6.053 3.772-17.404.377c-11.351-3.395-24.594-7.921-24.594-7.921s-9.08-5.659 6.433-11.693Z" />
+                                </g>
+                            </svg>
+                            <a href="">@honda_official</a>
+                        </li>
+                    </ul>
                 </div>
 
                 <div id="social-container">
@@ -329,9 +360,9 @@
                 <div id="refers-container">
                     <h3>Полезные ссылки</h3>
                     <ul>
-                        <li><a href="https://www.honda.ru/">Официальный сайт Honda в России</a></li>
-                        <li><a>Стать дилером</a></li>
-                        <li>ЧАВО</li>
+                        <li><a class="refer" href="https://www.honda.ru/">Официальный сайт Honda в России</a></li>
+                        <li><a class="refer" href="../html/search.html">Поиск по сайту</a></li>
+                        <li><a class="refer" href="../html/dealership.html">Подробнее об автосалоне</a></li>
                     </ul>
                 </div>
             </address>

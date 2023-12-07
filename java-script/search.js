@@ -13,7 +13,6 @@ document.addEventListener('DOMContentLoaded', function () {
         { title: 'Цены', url: 'offers.html' },
         { title: 'Сервис', url: 'service.html' },
         { title: 'Автомастерская', url: 'service.html' },
-        { title: 'Мас', url: 'service.html' },
         { title: 'Контакты', url: 'main.html#contacts' },
         { title: 'Связаться с нами', url: 'main.html#contacts' },
         { title: 'Социальные сети', url: 'main.html#contacts' },
