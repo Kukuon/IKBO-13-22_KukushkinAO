@@ -17,7 +17,6 @@
 body {
     margin: 0;
     background-color: var(--main-background-color);
-    /*Цвет фона на всей страницы*/
     height: 100%;
 }
 
@@ -47,10 +46,6 @@ header {
     min-height: 100vh;
 }
 
-.main {
-    flex: 1 1 auto;
-}
-
 h1 {
     margin: 0;
     padding-top: 100px;
@@ -64,10 +59,11 @@ h2 {
     font-family: 'JetBrains Mono', monospace;
     text-align: center;
 }
+
 main {
     margin: 30px 90px 0px 100px;
     text-align: justify;
-
+    flex: 1 1 auto;
     letter-spacing: 2px;
     line-height: 30px;
 }
@@ -83,6 +79,7 @@ main {
     padding: 30px 100px 20px 100px;
     margin: 0 auto;
 }
+
 @media screen and (max-width: 768px) {
     .gallery-container {
         grid-template-columns: repeat(1, 1fr);
@@ -118,8 +115,8 @@ footer {
     border: 2px solid #470303;
     transition: background 0.5s ease-in-out;
     font-family: 'JetBrains Mono', monospace;
-  }
-  
-  .hover-btn:hover {
+}
+
+.hover-btn:hover {
     background-position: right bottom;
-  }
+}

@@ -15,10 +15,11 @@
 
 /*Основное тело*/
 body {
-    margin: auto;
+    margin: 0;
     padding: 0;
     background-color: var(--main-background-color);
     /*Цвет фона на всей страницы*/
+    height: 100%;
 
 }
 
@@ -47,93 +48,48 @@ header {
 }
 
 
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
 
-
+main {
+    flex: 1 1 auto;
+}
 
 .slider-container {
-    display: flex;
     position: relative;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 400px;
-    overflow: hidden;
-    background-color: rgba(39, 39, 39, 0.568);
 }
 
-.slider {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-    flex-shrink: 1;
-    margin: 0;
-    width: 100%;
-    height: 100%;
-}
-
-
-.slide {
-    display: flex;
-    flex: 0 0 100%;
-    position: relative;
-    align-items: center;
-    justify-content: space-between;
-    padding: 5% 5% 5% 5%;
-
-    box-sizing: border-box;
-    width: 100%;
-    overflow: hidden;
-    background-color: rgb(34, 34, 34);
-}
-
-.image-container {
-    z-index: 3;
-}
-
-.image-container img {
-    width: 500px;
-
-    height: auto;
-    display: block;
-
-}
-
-.model-text {
+.prev,
+.next {
     position: absolute;
-    left: 50%;
-    bottom: 50%;
-    transform: translate(-50%, 50%);
-    white-space: nowrap;
-    font-size: 250px;
-    color: rgba(121, 121, 121, 0.678);
-    font-family: 'JetBrains Mono', monospace;
-    z-index: 2;
-}
-
-.description-container {
-    z-index: 3;
-    font-size: 20px;
-    text-align: justify;
-}
-
-
-button {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+    top: 10%;
     font-size: 24px;
-    background: none;
+    font-weight: bold;
+    color: white;
+    background-color: #333;
+    padding: 10px;
     border: none;
     cursor: pointer;
-    background-color: rgba(73, 73, 73, 0.7);
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    transition: background-color .4s ease;
-    z-index: 4
+    z-index: 4;
+    border-radius: 20px;
+    transition: background-color .5s ease, padding .5s ease;
+    transition: transform 0.2s ease-in-out;
 }
-
-button:hover {
-    background-color: rgba(124, 124, 124, 0.7);
+.button.clicked {
+    transform: scale(0.9);
+  }
+.prev:hover,
+.next:hover {
+    background-color: #595959;
+    padding: 15px;
+}
+.prev:active,
+.next:active {
+    background-color: #282828;
+    padding: 8px;
 }
 
 .prev {
@@ -144,19 +100,79 @@ button:hover {
     right: 10px;
 }
 
+.slider-container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+}
 
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
 
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+}
 
+.slide img {
+    width: 600px;
+    height: auto;
+    object-fit: cover;
+}
+.image {
+    height: 300px;
+    padding: 10%;
+    overflow: hidden;
+}
 
+.car-details {
+    text-align: center;
+    padding: 20px;
+}
 
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+table,
+th,
+td {
+    border: 1px solid #ddd;
+}
+
+th,
+td {
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    font-size: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+    .slider-container {
+        width: 90%;
+    }
+
+    .prev,
+    .next {
+        font-size: 18px;
+    }
+}
 
 /* footer part of web page */
 footer {
     background-color: var(--header-color);
     padding: 10px 20px 10px 20px;
+    width: 100%;
     position: absolute;
     bottom: 0;
-    width: 100%;
     z-index: 5;
     box-sizing: border-box;
 }
