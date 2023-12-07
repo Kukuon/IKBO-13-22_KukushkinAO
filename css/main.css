@@ -28,18 +28,13 @@ header {
   display: flex;
   position: fixed;
   flex-wrap: nowrap;
-
   justify-content: center;
   align-items: center;
-
   background-color: var(--header-color);
-
   height: 70px;
   max-height: 100%;
   white-space: nowrap;
-
   width: 100%;
-
   box-shadow: 5px 0px 10px black;
   z-index: 1;
 }
@@ -48,152 +43,17 @@ header {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-
 }
 
-main {
+.main {
   flex: 1 1 auto;
 }
-
-/* стилизация головной части сайта для ПК */
-@media screen and (min-width: 1001px) {
-
-  .menu-container input,
-  label {
-    display: none;
-  }
-
-  .nav-item {
-    text-align: center;
-    font-size: 17px;
-    display: inline-block;
-    padding: 10px 30px;
-    cursor: pointer;
-    letter-spacing: 2px;
-    position: relative;
-    overflow: hidden;
-
-  }
-
-  .nav-item a {
-    text-decoration: none;
-  }
-
-  .nav-item:before {
-    content: "";
-    position: absolute;
-    width: 0;
-    background: #fff;
-    left: 50%;
-    height: 2px;
-    bottom: 0;
-    transition: all .3s;
-    opacity: 0.7;
-  }
-
-  .nav-item:hover:before {
-    width: 100%;
-    left: 0;
-  }
-}
-
-
-/* стилизация головной части для мобильных устройств*/
-@media screen and (max-width: 1001px) {
-  .nav-list {
-    display: none;
-    position: fixed;
-    border-radius: 5px;
-    padding-left: 5px;
-    padding-right: 5px;
-    background-color: rgba(32, 32, 32, 0.95);
-    top: 10px;
-    /* Отступ сверху */
-    right: 70px;
-    /* Отступ справа */
-  }
-
-  [for=burger-toggle] {
-    display: block;
-    position: fixed;
-    right: 15px;
-    top: 10px;
-    cursor: pointer;
-  }
-
-  .line {
-    width: 25px;
-    height: 4px;
-    background-color: white;
-    margin: 5px 0;
-    /* Отступы между линиями */
-    transition: transform 0.3s ease;
-  }
-
-  /* Стили для анимации превращения в крестик */
-  #burger-toggle:checked+.burger-icon .line1 {
-    transform: rotate(-45deg) translate(-6px, 6px);
-  }
-
-  #burger-toggle:checked+.burger-icon .line2 {
-    opacity: 0;
-  }
-
-  #burger-toggle:checked+.burger-icon .line3 {
-    transform: rotate(45deg) translate(-6px, -6px);
-  }
-
-  .burger-icon {
-    cursor: pointer;
-    width: 25px;
-  }
-
-  #burger-toggle {
-    display: none;
-  }
-
-  #burger-toggle:checked+label+nav {
-    display: block;
-  }
-
-  .nav-list ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    font-size: 25px;
-    text-align: center;
-  }
-
-  .nav-item {
-    padding: 10px 0;
-
-  }
-
-  .nav-item>a {
-    text-decoration: none;
-  }
-
-  .nav-item>a:hover {
-    background-color: rgb(80, 80, 80);
-    border-radius: 5px;
-    padding-left: 5px;
-    padding-right: 5px;
-  }
-
-}
-
-
-
-
 
 
 
 /* main section */
 main {
-  padding-top: 20px;
-  padding-left: 20px;
-  margin: 0px 8% 0px 8%;
-
+  margin: 0px 5% 0px 5%;
 }
 
 main dl {
@@ -202,7 +62,7 @@ main dl {
 
 }
 
-@media screen and (min-width: 1001px) and (max-width: 2560px) {
+@media screen and (min-width: 1001px) {
   main dl {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
@@ -234,11 +94,9 @@ main dl dd {
   text-align: justify;
   color: rgb(167, 165, 165);
   margin-left: 5px;
-  margin-right: 30px;
+  margin-right: 5px;
   padding-bottom: 20px;
 }
-
-
 
 
 
@@ -257,7 +115,7 @@ main dl dd {
 .menu-container {
   display: grid;
   gap: 30px;
-  margin: 0px 10% 0px 10%;
+  margin: 0px 5% 0px 5%;
   padding-top: 40px;
   max-width: 1100px;
 
@@ -344,12 +202,6 @@ main dl dd {
   font-size: 30px;
   font-family: 'JetBrains Mono', monospace;
 }
-
-
-
-
-
-
 
 
 

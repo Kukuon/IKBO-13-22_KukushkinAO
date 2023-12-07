@@ -63,27 +63,34 @@ h2 {
 main {
     margin: 30px 90px 0px 100px;
     text-align: justify;
-    flex: 1 1 auto;
+    width: 80%;
+    margin: 0 auto;
     letter-spacing: 2px;
     line-height: 30px;
+}
+.main {
+    flex: 1 1 auto;
 }
 
 
 .gallery-container {
     display: inline-grid;
-    text-align: center;
     grid-template-columns: 25% 40% 33%;
     grid-auto-flow: row;
     gap: 15px;
-    width: 100x;
-    padding: 30px 100px 20px 100px;
+
     margin: 0 auto;
+    padding: 50px 10% 50px 10%;
+
+
 }
 
 @media screen and (max-width: 768px) {
     .gallery-container {
         grid-template-columns: repeat(1, 1fr);
     }
+
+
 }
 
 .gallery-container img {
@@ -98,7 +105,6 @@ footer {
     background-color: var(--header-color);
     padding: 10px 20px 10px 20px;
     margin-top: 50px;
-
 }
 
 .hover-btn {

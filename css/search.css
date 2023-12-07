@@ -16,11 +16,11 @@
 /*Основное тело*/
 body {
     margin: 0;
-
+    padding: 0;
     background-color: var(--main-background-color);
     /*Цвет фона на всей страницы*/
     height: 100%;
-    
+
 }
 
 header {
@@ -45,15 +45,11 @@ h1 {
     text-align: center;
 }
 
-
-
-
 .wrapper {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
 }
-
 
 main {
     flex: 1 1 auto;
@@ -62,20 +58,22 @@ main {
 
 
 
+
 .search-container {
-    
     background: var(--main-gradient);
     max-width: 400px;
     margin: 0 auto;
     border-radius: 15px;
     padding: 20px;
     box-shadow: 0px 0px 5px rgb(151, 4, 4);
+    transition: height .5s ease;
 }
 
+
 input {
-    
+
     width: 98%;
-    height: 30px;
+    height: 25px;
     color: black;
 
 }
@@ -84,16 +82,22 @@ input {
     list-style-type: none;
 
 }
-#searchResults li {
 
+#searchResults li {
+    padding: 5px;
+    margin: 2px;
 }
+
 #searchResults li a:hover {
     background-color: #500000;
+
 }
-#searchResults li a{
+
+#searchResults li a {
     text-decoration: none;
     padding: 5px 10px 5px 10px;
-
+    transition: background-color .2s ease;
+    border-radius: 15px;
 }
 
 
