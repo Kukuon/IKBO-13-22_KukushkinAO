@@ -47,11 +47,10 @@ header {
     font-family: 'JetBrains Mono', monospace;
 }
 
-
 .wrapper {
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
 }
 
 main {
@@ -62,6 +61,11 @@ main {
     position: relative;
 }
 
+.model {
+    font-size: 70px;
+    font-family: 'JetBrains Mono', monospace;
+}
+
 .prev,
 .next {
     position: absolute;
@@ -69,28 +73,29 @@ main {
     font-size: 24px;
     font-weight: bold;
     color: white;
-    background-color: #333;
+    background-color: #464646;
     padding: 10px;
+    width: 60px;
+    height: 60px;
     border: none;
     cursor: pointer;
     z-index: 4;
     border-radius: 20px;
-    transition: background-color .5s ease, padding .5s ease;
-    transition: transform 0.2s ease-in-out;
+    transition: background-color .5s ease, width .5s ease;
 }
-.button.clicked {
-    transform: scale(0.9);
-  }
+
 .prev:hover,
 .next:hover {
-    background-color: #595959;
-    padding: 15px;
+    background-color: #8b8b8b;
+    width: 80px;
+
 }
+
 .prev:active,
 .next:active {
-    background-color: #282828;
-    padding: 8px;
+    background-color: #a5a5a5;
 }
+
 
 .prev {
     left: 10px;
@@ -118,12 +123,14 @@ main {
 }
 
 .slide img {
-    width: 600px;
-    height: auto;
-    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    max-width: 900px;
 }
+
 .image {
-    height: 300px;
+    height: auto;
+    width: auto;
     padding: 10%;
     overflow: hidden;
 }
@@ -170,11 +177,6 @@ th {
 footer {
     background-color: var(--header-color);
     padding: 10px 20px 10px 20px;
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-    z-index: 5;
-    box-sizing: border-box;
 }
 
 .hover-btn {

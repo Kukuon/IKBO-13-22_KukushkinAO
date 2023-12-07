@@ -36,14 +36,15 @@
         <main>
             <h2 class="car-select-header"> ВЫБОР АВТОМОБИЛЯ</h2>
             <div class="slider-container">
-                <button class="prev" onclick="showSlide(currentSlide - 1), animateButton()">❮ Prev</button>
+                <button class="prev" onclick="showSlide(currentSlide - 1), animateButton()">❮</button>
                 <div class="slider">
                     <!-- Slide 1 -->
                     <div class="slide">
                         <div class="car-details">
-                            <h2>CR-V</h2>
+                            <h2 class="model">CR-V</h2>
                             <div class="image">
-                                <img id="cr-v" src="https://auto.honda.ru/local/static/dist/img/auto/model/model-cr-v-2020.png"
+                                <img id="cr-v"
+                                    src="https://auto.honda.ru/local/static/dist/img/auto/model/model-cr-v-2020.png"
                                     alt="cr-v">
                             </div>
 
@@ -95,7 +96,7 @@
                     <!-- Slide 2 -->
                     <div class="slide">
                         <div class="car-details">
-                            <h2>ACCORD</h2>
+                            <h2 class="model">ACCORD</h2>
                             <div class="image">
                                 <img id="accord" src="../pictures/honda.png" alt="honda">
                             </div>
@@ -147,7 +148,7 @@
                     <!-- Slide 3 -->
                     <div class="slide">
                         <div class="car-details">
-                            <h2>CIVIC</h2>
+                            <h2 class="model">CIVIC</h2>
                             <div class="image">
                                 <img id="civic" src="../pictures/civic.png" alt="Car 3">
                             </div>
@@ -199,9 +200,10 @@
                     <!-- Slide 4 -->
                     <div class="slide">
                         <div class="car-details">
-                            <h2>NSX</h2>
+                            <h2 class="model">NSX</h2>
                             <div class="image">
-                                <img id="nsx" src="https://purepng.com/public/uploads/large/purepng.com-acura-nsx-carcarcarsvehiclevehiclestransport-5615211263800zxy4.png"
+                                <img id="nsx"
+                                    src="https://purepng.com/public/uploads/large/purepng.com-acura-nsx-carcarcarsvehiclevehiclestransport-5615211263800zxy4.png"
                                     alt="Car 4">
                             </div>
                             <table>
@@ -249,42 +251,14 @@
                         </div>
                     </div>
                 </div>
-                <button class="next" onclick="showSlide(currentSlide + 1)">Next ❯</button>
+                <button class="next" onclick="showSlide(currentSlide + 1)">❯</button>
             </div>
+            <script src="../java-script/slider-script.js"></script>
         </main>
-
-        <script>
-            let currentSlide = 0;
-
-            function showSlide(index) {
-                const slider = document.querySelector('.slider');
-                const slides = document.querySelectorAll('.slide');
-                const slideWidth = slides[0].offsetWidth;
-
-                if (index < 0) {
-                    index = slides.length - 1;
-                } else if (index >= slides.length) {
-                    index = 0;
-                }
-
-                currentSlide = index;
-                slider.style.transform = `translateX(${-index * slideWidth}px)`;
-            }
-
-            function animateButton() {
-                var button = document.querySelector('.button');
-                button.classList.add('clicked');
-
-                // Ждем завершения анимации, затем удаляем класс
-                setTimeout(function () {
-                    button.classList.remove('clicked');
-                }, 200); // 200 миллисекунд - это время анимации в CSS (значение из transition)
-            }
-
-            // You can use setInterval or any other method to automatically change slides
-            // For example, setInterval(() => showSlide(currentSlide + 1), 5000);
-        </script>
-
+        <footer>
+            <a href="main.html" class="hover-btn">Вернуться на главную</a>
+            <p class="copyright"><small>Copyright © 2023 qqsh Inc All Right Reserved</small></p>
+        </footer>
     </div>
 </body>
 
